@@ -1,10 +1,20 @@
 body {
     background-color: #f9f9f9;
+    display: flex;
+    /*justify-content: center;*/
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+}
 
+/* Стили таблицы */
     table {
         border-collapse: collapse;
         width: 1500px;
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
 
         tr:nth-child(even) {
             background-color: #f5f5f5;
@@ -23,28 +33,30 @@ body {
         }
     }
 
+/* Стили карточек */
     .cards-container {
         display: flex;
         gap: 30px;
         justify-content: center;
-        margin-top: 50px;
     }
     .card {
-        border: 1px solid #ccc;
+        /*border: 1px solid #ccc;*/
         border-radius: 15px;
         padding: 10px;
         background-color: white;
         text-align: center;
         width: 300px;
         height: 360px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
     .card-image {
         width: 200px;
         height: 200px;
         border-radius: 50%;
     }
-    h2 {
+    .header-card {
         margin: 5px;
+        font-size: 24px;
     }
     h3 {
         margin: 5px;
@@ -52,4 +64,76 @@ body {
     p {
         color: grey;
     }
+
+/* Стили формы регистрации */
+.form-reg {
+    width: 300px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+}
+.header-form {
+    margin-bottom: 20px;
+}
+label {
+    font-weight: bold;
+    display: block;
+}
+input {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.button1 {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+}
+.button1:hover {
+    background-color: #42AAFF;
+}
+.button1:active {
+    background-color: #0062B5;
+}
+
+/* Стили аккордеона */
+.accordion {
+    /*margin: 0 auto;*/
+}
+.accordion-item {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.button2 {
+    width: 100%;
+    background-color: grey;
+    color: white;
+    padding: 10px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.button2:hover {
+    background-color: #4a4a4a;
+}
+.accordion-content {
+    display: none;
+    padding: 10px;
+    /*background-color: #f9f9f9;*/
+    /*border: 1px solid #ddd;*/
+    /*border-radius: 5px;*/
 }
